@@ -1,0 +1,20 @@
+This Project is called Bicycle Management for Our Green Campus 
+using Data Structure
+
+Some key features of this project: 
+1. Create new account for new user
+2. User Profile
+3. Total Cycle on Field
+4. Cycle Availibilty
+5. Rent a Cycle
+6. Return a Cycle
+7. User Log In
+8. User Log Out
+
+
+Contributed by: 
+1. Nabil Khan (1036)
+2. Md. Sakib hossain (1266)
+3. Md. Shahriar Islam (1259)
+4. Md Assaduzzaman (1233)
+5. Mahir Faysal (1060)
