@@ -369,6 +369,7 @@ void cycle_on_field(int ID)
 // rent a cycle
 void rent_a_cycle(int ID)
 {
+  printf("You successfully rent a Cycle\n");
   total_cycle_we_have--;
   on_field++;
   node *temp = default_user;
@@ -409,6 +410,7 @@ void rent_a_cycle(int ID)
 // return cycle
 void return_a_cycle(int ID)
 {
+  printf("You successfully return a Cycle\n");
   total_cycle_we_have++;
   on_field--;
   node *temp = default_user;
