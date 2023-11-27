@@ -43,6 +43,7 @@ void demo_user()
 
 int main()
 {
+  system("color 2");
   if (one_time)
   {
     default_user = (node *)malloc(sizeof(node)); // memory allocation for default user
