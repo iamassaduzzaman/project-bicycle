@@ -34,7 +34,7 @@ void return_a_cycle(int ID);
 // default user information
 void demo_user()
 {
-  strcpy(default_user->name, "Tushar");
+  strcpy(default_user->name, "Shahir");
   default_user->id = 9999;
   default_user->pass = 9999;
   default_user->cycle_taken = 0;
@@ -51,6 +51,16 @@ int main()
   one_time = 0;
 
   printf("\n---------------- Welcome to Daffodil Bicycle for Green Campus! ----------------\n\n");
+  printf("   .--.\n");
+  printf("  / _,-\n");
+  printf(" ( (_) )\n");
+  printf("  `---'\n");
+  printf("   _   _   _   \n");
+  printf("  | |_| |_| | |\n");
+  printf("  |_|_|_|_|_|_|\n");
+  printf("  /_|       |_|\n");
+  printf(" (_)         (_)\n");
+  printf("\n\n");
   printf("\t\t[1] Log in\n");
   printf("\t\t[2] Create new account\n");
   printf("\t\t[3] Exit\n");
@@ -144,7 +154,7 @@ void log_in()
 
   if (flag)
   {
-    printf("\n----------------- hello %s! -----------------------\n", user);
+    printf("\n----------------- yo %s! -----------------------\n", user);
     navigate(ID);
   }
   else
@@ -281,6 +291,7 @@ void user_profile(int ID)
       {
         printf("Cycle Taken: NO\n");
       }
+      printf("\nIMPORTANT STUFF TO KEEP IN MIND!!!\nReturn the bicycle in the same condition as you rented it\nIf you damage the bicycle,\nyou will be responsible for the cost of repairs\nRemove any personal belongings from the bike\nThis includes things like water bottles, bike bags,\nand any accessories you may have attached\n");
       break;
     }
     temp = temp->next;
@@ -313,7 +324,16 @@ void user_profile(int ID)
 // cycle availibility check
 void cycle_availibility(int ID)
 {
-  printf("Total Cycle Available: %d\n", total_cycle_we_have);
+  if (total_cycle_we_have)
+  {
+    printf("Yaayyyy!!! Cycle Available!!!!\n");
+    printf("Total Cycle Available: %d\n", total_cycle_we_have);
+  }
+  else
+  {
+    printf("Oppsss!!, we are sorry!! Cycle isn't available :(\n");
+  }
+
   printf("-----------------------------------------------------\n");
   printf("\t\t[1] Navigate\n");
   printf("\t\t[2] Log Out\n");
@@ -341,6 +361,7 @@ void cycle_availibility(int ID)
 // cycle on field
 void cycle_on_field(int ID)
 {
+  printf("");
   printf("Total Cycle On Field: %d\n", on_field);
   printf("-----------------------------------------------------\n");
   printf("\t\t[1] Navigate\n");
@@ -369,7 +390,8 @@ void cycle_on_field(int ID)
 // rent a cycle
 void rent_a_cycle(int ID)
 {
-  printf("You successfully rent a Cycle\n");
+  printf("You successfully rent a Cycle :)\n");
+  printf("\nNOTE: Make sure the tires are inflated\nThe brakes are working\nAnd the gears are shifting smoothly\nWear a helmet (must)\n");
   total_cycle_we_have--;
   on_field++;
   node *temp = default_user;
@@ -410,7 +432,8 @@ void rent_a_cycle(int ID)
 // return cycle
 void return_a_cycle(int ID)
 {
-  printf("You successfully return a Cycle\n");
+  printf("You successfully return a Cycle!!!!!\n");
+  printf("\nNOTE: Park the bike in the designated area and\nfind a staff member to assist you\n");
   total_cycle_we_have++;
   on_field--;
   node *temp = default_user;
